@@ -5,32 +5,125 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
-    <title>L.Alam Portfolio</title>
+    <link rel="stylesheet" href="media.css"/>
+    <title>Labeeb Alam Portfolio</title>
 </head>
 <body>
-    <h1>Labeeb Alam Portfolio</h1>
-    <h2>This is my portfolio website</h2>
-    <p>Currently a work in progress...</p>
-    <div id="header">
-        <div id="tabs">
-            <nav>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+    <nav id="desktop-nav">
+        <div class="logo">Labeeb Alam</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
         </div>
-    </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Labeeb Alam</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="media/profile-pic.png" alt="Labeeb Alam profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Labeeb Alam</h1>
+            <p class="section__text__p2">Computer Science Student</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./media/PH159 Final Notes.pdf')">Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='#Contact'">Contact Info</button>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="container-fluid">
+            <div class="section-container">
+                <div class="section-text">
+                    <p class="section-text-p1">
+                        Hi, Im a Junior at Boston University majoring in Computer Science. <br> Ever since my very first scratch project in middle school I've been enhacing my skills as a programmer. 
+                        Currently, im diving into Web dev, Data science, and Machine learning while pursuing my education.
+                        I was born and raised in Boston and on my free time I enjoy playing basketabll, reading, and biking around the city.
+                        As an undergraduate, I am excited to get involved in the field and obtain more company experience.
+                    </p>
+                </div>
+                <div class="section__pic-container">
+                    <img src="./media/bulogo.png"alt="Profile picture" class="about-pic">
+                </div>
+            </div>
+        </div>
+        <img
+        src="./media/arrow-down-sign-to-navigate.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+        />
+    </section>
+    <section id="Contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./media/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:lalam@bu.edu">lalam@bu.edu</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./media/business.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/labeeb-alam-7baa3b277/">LinkedIn</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+                src='./media/github.png'
+                alt="My Github Profile"
+                class="icon contact-icon"
+            />
+            <p><a href="https://github.com/L-alam">Github</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+                src='./media/instagram.png'
+                alt="Instagram"
+                class="icon contact-icon"
+            />
+            <p><a href="https://www.instagram.com/labeeber/">Instagram</a></p>
+          </div>
+        </div>
+      </section>
+    <script src="script.js"></script>
 </body>
 </html>
 
+<!--<img src="./media/arrow-down-sign-to-navigate.png" alt="Arrow Icon" class="icon arrow"
+        onclick="location.href='./Experience'"> -->
 
-<!-- <p>
-    Undergraduate computer science student studying at Boston University.
-    Eager to explore and learn the possibilities of software development and machine learning. 
-    As an undergraduate, I am excited to get involved in the field and obtain more company experience.
-</p> -->
+<!--  Undergraduate computer science student studying at Boston University.
+                    Eager to explore and learn the possibilities of software development and machine learning. 
+                    As an undergraduate, I am excited to get involved in the field and obtain more company experience.-->
+
+
+
+
